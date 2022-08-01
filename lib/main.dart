@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Weather Api',
+      title: 'Weather App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: const Color(0xFFf9f9f9),
         title: const Text("Weather",
           style: TextStyle(
-              color: Colors.black
+              color: Colors.redAccent
           ),
         ),
         centerTitle: true,
@@ -69,10 +69,10 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               currentWeather(Icons.wb_sunny_rounded, "${data!.temp}", "${data!.city}","${data!.cntry}"),
               const SizedBox(height: 20,),
-              const Text("Additional Information",
+              const Text("Addi Information",
                 style: TextStyle(
-                  fontSize: 24,
-                  color: Color(0xdd212121),
+                  fontSize: 23,
+                  color: Color(0xdd212122),
                   fontWeight: FontWeight.bold,
                 ),
               ),
